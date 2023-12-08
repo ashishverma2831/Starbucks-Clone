@@ -13,25 +13,27 @@
 <body>
 
     <header class="shadow-lg">
-        <nav class="flex 2xl:w-11/12 mx-auto 2xl:px-10 xl:w-11/12 lg:w-full md:w-full lg:px-4 md:px-4 md:py-2 sm:py-2  lg:py-2">
-            <div class=" w-20 py-4 md:py-2 lg:py-2 flex justify-center">
+        <nav class="shadow-lg">
+          <div class="w-11/12 flex justify-between mx-auto p-4">
+            <a class="w-[120px] flex justify-center">
                 <img class="w-14 h-14" src="https://mcdonough.com/wp-content/uploads/2020/09/starbucks-logo-png-transparent-2025x2048.png" alt="starbucks-logo">
-            </div>
+            </a>
             <button data-collapse-toggle="navbar-default" type="button" class="inline-flex my-auto items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
                 <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
                 </svg>
             </button>
-            <div class="flex w-11/12 px-2 justify-between my-auto" id="navbar-default">
-                <div class="flex px-4">
+            <div class="hidden w-full md:block my-auto" id="navbar-default">
+              <div class="flex w-full px-2 justify-between my-auto">
+                <div class="flex">
                     <ul class="flex justify-center my-auto gap-6">
                         <li class="hover:text-green-600"><a href="#"><strong>MENU</strong></a></li>
                         <li class="hover:text-green-600"><a href="#"><strong>REWARDS</strong></a></li>
                         <li class="hover:text-green-600"><a href="#"><strong>GIFT CARDS</strong></a></li>
                     </ul>
                 </div>
-                <div class="flex my-auto py-2">
+                <div class="flex my-auto py-2 px-2">
                     <div class="mr-[60px] my-auto flex gap-4 hover:text-green-600 font-semibold">
                         <i class="fa-solid fa-location-dot my-auto text-xl"></i>
                         <a href="#">Find a store</a>
@@ -41,7 +43,9 @@
                         <button class="px-4 py-1 bg-black text-white rounded-[150px] hover:bg-gray-700">Join now</button>
                     </div>
                 </div>
+              </div>
             </div>
+          </div>
         </nav>
     </header>
 
@@ -54,7 +58,7 @@
 
 
 
-    <!-- <footer class="shadow-lg">      
+    <footer class="shadow-lg lg:hidden xl:hidden md:block sm:block">      
 <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
     <h2 id="accordion-flush-heading-1">
       <button type="button" class="flex items-center justify-between w-full py-5 px-8 font-medium rtl:text-right text-gray-500" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
@@ -141,15 +145,43 @@
           <p class="text-gray-500 dark:text-gray-400 hover:text-black"><a href="#">Explore and Find Coffee for Home</a></p>
         </div>
       </div>
-</div>
+    </div>
 
-    </footer> -->
+    <div class=" w-11/12 mx-auto border-t-2">
+      <div class="text-3xl flex justify-start gap-4 py-6">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-discord"></i></a>
+      </div>
+      <div>
+        <ul class="flex flex-col gap-2 justify-between">
+          <li><a class="hover:underline hover:decoration-1" href="#">Privacy Notice</a></li>
+          <li class="w-[2px] bg-slate-500"></li>
+          <li ><a class="hover:underline hover:decoration-1" href="#">Terms of Use</a></li>
+          <li class="w-[2px] bg-slate-500"></li>
+          <li ><a class="hover:underline hover:decoration-1" href="#">Do Not Share My Personal Information</a></li>
+          <li class="w-[2px] bg-slate-500"></li>
+          <li ><a class="hover:underline hover:decoration-1" href="#">CA Supply Chain Act</a></li>
+          <li class="w-[2px] bg-slate-500"></li>
+          <li ><a class="hover:underline hover:decoration-1" href="#">Accessibility</a></li>
+          <li class="w-[2px] bg-slate-500"></li>
+          <li ><a class="hover:underline hover:decoration-1" href="#">Cookie Preferences</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-gray-500 py-4">&copy; 2023 Starbucks Coffee Company. All rights reserved.</p>
+      </div>
+    </div>
+    </footer>
 
-    <footer class="shadow-lg">      
-      <div class="bg-red-500 flex" id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
-          <div>
-            <span class="text-black text-lg py-4 px-8">About Us</span>
-            <div class="flex flex-col gap-5 py-4 px-8 border-b border-gray-200 dark:border-gray-700">
+    <footer class="shadow-lg lg:block md:hidden sm:hidden hidden">      
+      <div class=" flex py-4 px-4 w-full mx-auto justify-evenly">
+          <div class="w-2/12">
+            <h3 class="text-black text-lg py-4">About Us</h3>
+            <div class="flex flex-col gap-5 py-4">
               <p class="text-gray-500 dark:text-gray-400 hover:text-black"><a href="#">Our Company</a></p>
               <p class="text-gray-500 dark:text-gray-400 hover:text-black"><a href="#">Our Coffee</a></p>
               <p class="text-gray-500 dark:text-gray-400 hover:text-black"><a href="#">Stories and News</a></p>
@@ -159,9 +191,10 @@
               <p class="text-gray-500 dark:text-gray-400 hover:text-black"><a href="#">Contact Us</a></p>
             </div>
           </div>
-          <div>
-              <span class="text-black text-lg py-4 px-8">Careers</span>
-              <div class="flex flex-col gap-5 py-4 px-8 border-b border-gray-200 dark:border-gray-700">
+
+          <div class="w-2/12">
+              <h3 class="text-black text-lg py-4">Careers</h3>
+              <div class="flex flex-col gap-5 py-4">
                 <p class="text-gray-500 dark:text-gray-400 hover:text-black"><a href="#">Culture and Values</a></p>
                 <p class="text-gray-500 dark:text-gray-400 hover:text-black"><a href="#">Inclusion, Diversity, and Equity</a></p>
                 <p class="text-gray-500 dark:text-gray-400 hover:text-black"><a href="#">College Achievement Plan</a></p>
@@ -171,38 +204,66 @@
               </div>
           </div>
 
-          <div>
-              <span class="text-black text-lg py-4 px-8">Social Impact</span>
-              <div class="flex flex-col gap-5 py-4 px-8 border-b border-gray-200 dark:border-gray-700">
+          <div class="w-2/12">
+              <h3 class="text-black text-lg py-4">Social Impact</h3>
+              <div class="flex flex-col gap-5 py-4">
                 <p class="text-gray-500 dark:text-gray-400 hover:text-black"><a href="#">People</a></p>
                 <p class="text-gray-500 dark:text-gray-400 hover:text-black"><a href="#">Planet</a></p>
                 <p class="text-gray-500 dark:text-gray-400 hover:text-black"><a href="#">Environmental and Social Impact Reporting</a></p>
               </div>
-            </div>
           </div>
             
-          <div>
-              <span class="text-black text-lg py-4 px-8">For Business Partners</span>
-              <div class="flex flex-col gap-5 py-4 px-8 border-b border-gray-200 dark:border-gray-700">
+          <div class="w-2/12">
+              <h3 class="text-black text-lg py-4">For Business Partners</h3>
+              <div class="flex flex-col gap-5 py-4">
                 <p class="text-gray-500 dark:text-gray-400 hover:text-black"><a href="#">Landlord Support Center</a></p>
                 <p class="text-gray-500 dark:text-gray-400 hover:text-black"><a href="#">Suppliers</a></p>
                 <p class="text-gray-500 dark:text-gray-400 hover:text-black"><a href="#">Corporate Gift Card Sales</a></p>
                 <p class="text-gray-500 dark:text-gray-400 hover:text-black"><a href="#">Office and Foodservice Coffee</a></p>
               </div>
           </div>
-            <div>
-              <span class="text-black text-lg py-4 px-8">Order and Pick Up</span>
-              <div class="flex flex-col gap-5 py-4 px-8 border-b border-gray-200 dark:border-gray-700">
+
+          <div class="w-2/12">
+              <h3 class="text-black text-lg py-4">Order and Pick Up</h3>
+              <div class="flex flex-col gap-5 py-4">
                 <p class="text-gray-500 dark:text-gray-400 hover:text-black"><a href="#">Order on the App</a></p>
                 <p class="text-gray-500 dark:text-gray-400 hover:text-black"><a href="#">Order on the Web</a></p>
                 <p class="text-gray-500 dark:text-gray-400 hover:text-black"><a href="#">Delivery</a></p>
                 <p class="text-gray-500 dark:text-gray-400 hover:text-black"><a href="#">Order and Pick Up Options</a></p>
                 <p class="text-gray-500 dark:text-gray-400 hover:text-black"><a href="#">Explore and Find Coffee for Home</a></p>
               </div>
-            </div>
+          </div>
       </div>
-      
-          </footer>
+
+      <div class=" w-11/12 mx-auto border-t-2">
+        <div class="text-3xl flex justify-start gap-4 py-6">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-discord"></i></a>
+        </div>
+        <div>
+          <ul class="flex justify-between">
+            <li class="hover:underline hover:decoration-1"><a href="#">Privacy Notice</a></li>
+            <li class="w-[2px] bg-slate-500"></li>
+            <li class="hover:underline hover:decoration-1"><a href="#">Terms of Use</a></li>
+            <li class="w-[2px] bg-slate-500"></li>
+            <li class="hover:underline hover:decoration-1"><a href="#">Do Not Share My Personal Information</a></li>
+            <li class="w-[2px] bg-slate-500"></li>
+            <li class="hover:underline hover:decoration-1"><a href="#">CA Supply Chain Act</a></li>
+            <li class="w-[2px] bg-slate-500"></li>
+            <li class="hover:underline hover:decoration-1"><a href="#">Accessibility</a></li>
+            <li class="w-[2px] bg-slate-500"></li>
+            <li class="hover:underline hover:decoration-1"><a href="#">Cookie Preferences</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-gray-500 py-2">&copy; 2023 Starbucks Coffee Company. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
 
 
 
